@@ -4,7 +4,7 @@ import OffersSection from "./components/OffersSection";
 import BeHealthySection from "./components/BeHealthySection";
 import HotDealSection from "./components/HotDealSection";
 import OnlyOrganicSection from "./components/OnlyOrganicSection";
-import TypesSection from "./components/typesSection";
+import TypesSection from "./components/TypesSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import MyFooter from "./components/MyFooter";
 import fruits from "./assets/images/fruits.png";
