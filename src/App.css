@@ -1,0 +1,90 @@
+:root {
+  --primary-color: #4BAF47;
+  --secondary-color: #EEC044;
+  --muted-color: #878680;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: white;
+}
+
+.nav-link.tabs {
+  border-bottom: 2px solid rgba(255, 0, 0, 0);
+}
+
+.green-color {
+  color: var(--primary-color);
+}
+
+.green-bg {
+  background-color: var(--primary-color) !important;
+}
+
+.color-white {
+  color: white !important;
+}
+
+.color-yellow {
+  color: var(--secondary-color) !important;
+}
+
+.color-second {
+  color: var(--secondary-color);
+}
+
+.color-muted {
+  color: var(--muted-color) !important;
+}
+
+.my-banner a:hover {
+  color: var(--secondary-color) !important;
+}
+
+.my-banner a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link {
+  color: var(--muted-color) !important;
+}
+
+.nav-link.tabs.active {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.my-button:hover {
+  background-color: var(--secondary-color) !important;
+  color: black !important;
+}
+
+.header-card {
+  bottom: calc(-height);
+}
+
+.types-section a:hover {
+  color: white !important;
+}
+
+.zoom-image {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .zoom-image {
+  transform: scale(1.1);
+}
