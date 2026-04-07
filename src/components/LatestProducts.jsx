@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import MyCard from "./MyCard"; // Make sure this path is correct
+import ProductCard from "./product_card/ProductCard";
 
 const LatestProducts = ({ products }) => {
   return (
@@ -10,7 +10,7 @@ const LatestProducts = ({ products }) => {
       <Row className="gx-4 gy-4">
         {products.map((product) => (
           <Col key={product.id} xs={12} sm={6} md={4}>
-            <MyCard product={product} />
+            <ProductCard product={product} />
           </Col>
         ))}
       </Row>

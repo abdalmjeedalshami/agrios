@@ -1,0 +1,24 @@
+.my-banner a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.my-banner a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 350px) {
+    .my-banner a {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.email-text {
+    word-break: break-all;
+    /* Safely wrap long emails/locations */
+    overflow-wrap: anywhere;
+    /* Let it wrap naturally */
+    max-width: 100%;
+    /* Prevents pushing layout horizontally */
+}

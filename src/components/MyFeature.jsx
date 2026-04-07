@@ -1,6 +1,7 @@
-import {Container, Row, Col} from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import COLORS from "../constants/colors";
 
-const MyFeature = ({feature}) => {
+const MyFeature = ({ feature }) => {
   return (
     <Row key={feature.id} className="mb-3">
       <Col xs={2} className="d-flex align-items-center justify-content-center">
@@ -19,7 +20,7 @@ const MyFeature = ({feature}) => {
 
       <Col xs={10}>
         <p className="fw-bold mb-0 fs-5">{feature.title}</p>
-        <p className="text-muted color-muted">{feature.subtitle}</p>
+        <p style={{ color: COLORS.gray }}>{feature.subtitle}</p>
       </Col>
     </Row>
   );

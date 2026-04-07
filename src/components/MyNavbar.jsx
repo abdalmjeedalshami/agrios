@@ -1,10 +1,9 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { NavLink } from "react-router";
-import { FaSearch, FaHome } from "react-icons/fa";
 
 function MyNavbar({ logo, tabs = [], routes = [], actions = [] }) {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-0">
+    <Navbar collapseOnSelect expand="lg" className="sticky-top bg-body-tertiary">
       <Container className="p-0">
         <Navbar.Brand href="/">
           <NavLink className="nav-link border-0" to={"/"}>
@@ -43,17 +42,17 @@ function MyNavbar({ logo, tabs = [], routes = [], actions = [] }) {
               )
             )}
           </Nav>
-          <Nav>
+          <div className="d-none d-lg-flex gap-4">
             {routes.map((route, i) => (
               <NavLink
                 className="nav-link border-0 fs-4 p-0"
                 key={i}
                 to={route.to}
               >
-                {i === 0 ? <FaSearch /> : <FaHome className="ms-4" />}
+                {route.icon}
               </NavLink>
             ))}
-          </Nav>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -5,7 +5,7 @@ import BeHealthySection from "./components/BeHealthySection";
 import HotDealSection from "./components/HotDealSection";
 import OnlyOrganicSection from "./components/OnlyOrganicSection";
 import TypesSection from "./components/TypesSection";
-import TestimonialsSection from "./components/TestimonialsSection";
+import TestimonialsSection from "./components/testimonials_section/TestimonialsSection";
 import MyFooter from "./components/MyFooter";
 import fruits from "./assets/images/fruits.png";
 import appleBg from "./assets/images/apple-bg.png";
@@ -20,6 +20,8 @@ import boxIcon from "./assets/icons/box.svg";
 import shippingIcon from "./assets/icons/shipping.svg";
 import farmer1Icon from "./assets/icons/farmer1.svg";
 import farmer2Icon from "./assets/icons/farmer.svg";
+import products from "./data/products.js"
+import hotDeals from "./data/hotDeals.js";
 
 const Home = () => (
   <>
@@ -33,50 +35,51 @@ const Home = () => (
     />
 
     <LatestProducts
-      products={[
-        {
-          id: 1,
-          title: "Wireless Headphones",
-          image: grape,
-          description: "Crystal-clear sound & long battery life.",
-          price: "$829",
-        },
-        {
-          id: 2,
-          title: "Smartwatch",
-          image: grape,
-          description: "Track your fitness in style.",
-          price: "$129",
-        },
-        {
-          id: 3,
-          title: "Bluetooth Speaker",
-          image: grape,
-          description: "Big sound in a small box.",
-          price: "$49",
-        },
-        {
-          id: 4,
-          title: "Bluetooth Speaker",
-          image: grape,
-          description: "Big sound in a small box.",
-          price: "$49",
-        },
-        {
-          id: 5,
-          title: "Smartwatch",
-          image: grape,
-          description: "Track your fitness in style.",
-          price: "$129",
-        },
-        {
-          id: 6,
-          title: "Wireless Headphones",
-          image: grape,
-          description: "Crystal-clear sound & long battery life.",
-          price: "$89",
-        },
-      ]}
+      products={products}
+    // products={[
+    //   {
+    //     id: 1,
+    //     title: "Wireless Headphones",
+    //     image: grape,
+    //     description: "Crystal-clear sound & long battery life.",
+    //     price: "$829",
+    //   },
+    //   {
+    //     id: 2,
+    //     title: "Smartwatch",
+    //     image: grape,
+    //     description: "Track your fitness in style.",
+    //     price: "$129",
+    //   },
+    //   {
+    //     id: 3,
+    //     title: "Bluetooth Speaker",
+    //     image: grape,
+    //     description: "Big sound in a small box.",
+    //     price: "$49",
+    //   },
+    //   {
+    //     id: 4,
+    //     title: "Bluetooth Speaker",
+    //     image: grape,
+    //     description: "Big sound in a small box.",
+    //     price: "$49",
+    //   },
+    //   {
+    //     id: 5,
+    //     title: "Smartwatch",
+    //     image: grape,
+    //     description: "Track your fitness in style.",
+    //     price: "$129",
+    //   },
+    //   {
+    //     id: 6,
+    //     title: "Wireless Headphones",
+    //     image: grape,
+    //     description: "Crystal-clear sound & long battery life.",
+    //     price: "$89",
+    //   },
+    // ]}
     />
 
     <OffersSection
@@ -101,32 +104,7 @@ const Home = () => (
     />
 
     <HotDealSection
-      deals={[
-        {
-          id: 1,
-          image: grape,
-          title: "Grapes",
-          price: 100,
-        },
-        {
-          id: 2,
-          image: grape,
-          title: "Onions",
-          price: 20,
-        },
-        {
-          id: 3,
-          image: grape,
-          title: "Apples",
-          price: 50,
-        },
-        {
-          id: 4,
-          image: grape,
-          title: "Bananas",
-          price: 20,
-        },
-      ]}
+      deals={hotDeals}
     />
 
     <OnlyOrganicSection
@@ -168,19 +146,18 @@ const Home = () => (
         {
           id: 1,
           // name: "Sarah",
-          background: `${appleBg}`,
+          background: `https://images.pexels.com/photos/5677917/pexels-photo-5677917.jpeg`,
           profile:
-            "https://tse4.mm.bing.net/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
+            "https://images.pexels.com/photos/17264364/pexels-photo-17264364.jpeg",
         },
         {
           id: 2,
           // name: "Abd Almjeed",
-          background: `${appleBg}`,
+          background: "https://images.pexels.com/photos/18961915/pexels-photo-18961915.jpeg",
           profile:
             "https://tse4.mm.bing.net/th/id/OIP.IGNf7GuQaCqz_RPq5wCkPgHaLH?rs=1&pid=ImgDetMain&o=7&rm=3",
         },
-      ]}
-    />
+      ]} />
 
     <MyFooter />
   </>

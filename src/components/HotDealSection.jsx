@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import DealCard from "./DealCard"; // Adjust the import path if needed
+import ProductCard from "./product_card/ProductCard";
 
 const HotDealSection = ({ deals }) => {
   return (
@@ -10,7 +10,7 @@ const HotDealSection = ({ deals }) => {
       <Row className="gx-4 gy-4">
         {deals.map((deal) => (
           <Col key={deal.id} xs={12} sm={6} md={4} lg={3}>
-            <DealCard deal={deal} />
+            <ProductCard product={deal} />
           </Col>
         ))}
       </Row>

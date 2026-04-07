@@ -1,6 +1,7 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
-import MyButton from "./MyButton";
+import MyButton from "./my_button/MyButton";
 import theme from "../theme";
+import COLORS from "../constants/colors";
 
 const MyHeader = ({
   background,
@@ -28,7 +29,7 @@ const MyHeader = ({
         style={{ zIndex: 2 }}
       >
         <div className="fs-3 fs-md-1 fw-bold mb-4">
-          <span className="color-second">{yellowTitle}</span> <br />
+          <span style={{ color: COLORS.yellow }}>{yellowTitle}</span> <br />
           {normalTitle}
         </div>
 
@@ -54,7 +55,7 @@ const MyHeader = ({
                 className="fs-5 d-flex flex-column justify-content-center"
               >
                 <strong>Return Policy</strong>
-                <p className="fs-6 color-muted">Money Back Guarantee</p>
+                <p className="fs-6" style={{ color: COLORS.gray }}>Money Back Guarantee</p>
               </Col>
             </Row>
           </Col>
@@ -71,7 +72,7 @@ const MyHeader = ({
                 className="fs-5 d-flex flex-column justify-content-center"
               >
                 <strong>Return Policy</strong>
-                <p className="fs-6 color-muted">Money Back Guarantee</p>
+                <p className="fs-6" style={{ color: COLORS.gray }}>Money Back Guarantee</p>
               </Col>
             </Row>
           </Col>
@@ -88,7 +89,7 @@ const MyHeader = ({
                 className="fs-5 d-flex flex-column justify-content-center"
               >
                 <strong>Return Policy</strong>
-                <p className="fs-6 color-muted">Money Back Guarantee</p>
+                <p className="fs-6" style={{ color: COLORS.gray }}>Money Back Guarantee</p>
               </Col>
             </Row>
           </Col>

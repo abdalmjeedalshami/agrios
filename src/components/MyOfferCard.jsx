@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import MyButton from "./MyButton";
+import MyButton from "./my_button/MyButton";
 import theme from "../theme";
 
 const MyOfferCard = ({ card }) => {
@@ -17,8 +17,8 @@ const MyOfferCard = ({ card }) => {
       <p className="fs-2 fw-bold w-50">{card.title}</p>
       <MyButton
         text={"Order Now"}
-        textColor={theme.colors.text.dark}
         color={theme.colors.text.light}
+        textColor={theme.colors.text.dark}
       />
     </div>
   );

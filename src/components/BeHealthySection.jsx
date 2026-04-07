@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import MyButton from "./MyButton";
+import MyButton from "./my_button/MyButton";
 import theme from "../theme";
 
 const BeHealthySection = ({ background, title, btn }) => {

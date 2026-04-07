@@ -12,65 +12,21 @@ img {
   max-width: 100%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  background-color: white;
-}
-
-.nav-link.tabs {
-  border-bottom: 2px solid rgba(255, 0, 0, 0);
-}
-
-.green-color {
-  color: var(--primary-color);
-}
-
+/* Used */
 .green-bg {
-  background-color: var(--primary-color) !important;
-}
-
-.color-white {
-  color: white !important;
-}
-
-.color-yellow {
-  color: var(--secondary-color) !important;
-}
-
-.color-second {
-  color: var(--secondary-color);
-}
-
-.color-muted {
-  color: var(--muted-color) !important;
-}
-
-.my-banner a:hover {
-  color: var(--secondary-color) !important;
-}
-
-.my-banner a {
-  text-decoration: none;
-  color: white;
+  background-color: var(--primary-color);
 }
 
 .nav-link {
-  color: var(--muted-color) !important;
+  color: var(--muted-color);
 }
 
 .nav-link.tabs.active {
-  color: black !important;
+  color: black;
 }
 
 .nav-link:hover {
-  color: var(--primary-color) !important;
-}
-
-.my-button:hover {
-  background-color: var(--secondary-color) !important;
-  color: black !important;
+  color: var(--primary-color);
 }
 
 .header-card {
@@ -78,7 +34,7 @@ body {
 }
 
 .types-section a:hover {
-  color: white !important;
+  color: white;
 }
 
 .zoom-image {
@@ -87,4 +43,12 @@ body {
 
 .card:hover .zoom-image {
   transform: scale(1.1);
+}
+
+.misn50 {
+  margin-inline-start: -50%;
+}
+
+.misn20 {
+  margin-inline-start: -20%;
 }
